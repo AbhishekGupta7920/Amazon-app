@@ -36,14 +36,14 @@ const LoginSignUpForm = () => {
     if (isSignUp)
       if (!formData.username.trim()) tempErrors.username = "Username is required";
     if (!formData.email.trim())
-      tempErrors.email = "Email is required";
-    if (!formData.password.trim())
+      tempErrors.email = "Email is required"; 
+    if (!formData.password.trim());
       tempErrors.password = "Password is required";
     if (isSignUp)
-      if (isSignUp || formData.password !== formData.confirmPassword)
+      if (isSignUp && formData.password !== formData.confirmPassword)
         tempErrors.confirmPassword = "Passwords must match";
 
-    setErrors(tempErrors);
+    setErrors(tempErrors); 
     return Object.keys(tempErrors).length === 0;
   };
 
