@@ -2,6 +2,9 @@
 
 Welcome to Amazon-Inspired E-Commerce Platform! This project is a feature-rich, modern web application designed to provide a seamless shopping experience. Built using cutting-edge technologies, it ensures smooth navigation, efficient data management, and a visually stunning interface.
 
+
+Live Link: https://amazon-abhi.netlify.app/
+
 🌟 Features
 
 🖥️ Frontend Interface Development
