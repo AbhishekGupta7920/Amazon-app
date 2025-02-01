@@ -25,7 +25,7 @@ const SearchResultProducts = () => {
 
         const jsonData = await response.json();
         const products = jsonData.products;
-        const ansData = products.filter((data) => data.title.toLowerCase().includes(searchQuery));
+        const ansData = products.filter((data) => data.title.toLowerCase().includes(searchQuery.toLocaleLowerCase()));
         setSearchProducts(ansData || []);
       } catch (err) {
         setError(err.message);
@@ -40,7 +40,7 @@ const SearchResultProducts = () => {
   }, [searchQuery]);
 
   return (
-    <div className="container mx-auto mt-1 p-4">
+    <div className="container mx-auto mt-10 p-4">
       {loading && <p className="text-center text-xl">Loading...</p>}
       {error && <p className="text-center text-red-600">{error}</p>}
 

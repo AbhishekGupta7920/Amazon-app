@@ -30,15 +30,15 @@ const Category = () => {
         }
     };
 
-    return (
-        <div className='mt-10 grid grid-cols-1 gap-x-6 gap-y-10 px-6 md:px-0 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
-            {/* Render each product */}
-            {products.map((product) => {
-                return <Item key={product.id} product={product} />
-            })}
-        </div>
-
-    );
+        return (
+            <div className='mt-20 mx-3 grid grid-cols-1 gap-x-6 gap-y-8 px-6 md:px-0 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+                {/* Render each product */}
+                {products.map((product) => {
+                    return <Item key={product.id} product={product} />
+                })}
+            </div>
+        );
+        
 };
 
 export default Category;

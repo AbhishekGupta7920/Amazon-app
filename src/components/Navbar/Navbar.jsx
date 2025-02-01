@@ -69,7 +69,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white px-4  w-full z-50 shadow-sm top-0 shadow-gray-400">
+    <div className="bg-white px-4 mb-12 fixed w-full z-50 shadow-sm top-0 shadow-gray-400">
       <div className="max-w-7xl mx-auto  px-5 flex justify-between items-center">
         <Link to="/">
           <img src={Logo} alt="Logo" className="h-14 w-30" />
@@ -136,6 +136,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+       {/* navbar links of category wise products */}
       <div className="border-t-2">
         <nav className="hidden md:block">
           <ul className="flex items-center  text-xl gap-7 py-1">
@@ -149,7 +150,7 @@ const Navbar = () => {
         </nav>
       </div>
       {/* Only show in mobile */}
-      <div className=" mt-1 text-center sm:block md:hidden lg:hidden">
+      <div className=" my-1 text-center sm:block md:hidden lg:hidden">
         {/* 2nd Search bar */}
         <form
           onSubmit={handleSearchSubmit}
@@ -162,9 +163,9 @@ const Navbar = () => {
             className="w-[300px] sm:w-[300px] text-gray-800   rounded-lg border border-gray-300 py-1 px-2
               text-sm focus:outline-none focus:border-1 focus:border-primary"
           />
-          <button type="submit">
+          {/* <button type="submit">
             <IoMdSearch className="text-slate-800 absolute top-1/2 -translate-y-1/2 right-3" />
-          </button>
+          </button> */}
         </form>
       </div>
       <ResponsiveMenu showMenu={showMenu} setShowMenu={setShowMenu} />

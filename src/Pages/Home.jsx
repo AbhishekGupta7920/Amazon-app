@@ -16,7 +16,7 @@ import LastDivToShow from '../components/LastDivToShow'
 
 const Home = () => {
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-gray-100 pt-10'>
       {/* Hero Banner Section */}
       <HeroBanner/>
       {/* <MultiBanner/> */}
